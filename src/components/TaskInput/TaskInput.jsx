@@ -32,7 +32,7 @@ const TaskInput = ({ addTask }) => {
                     }}
                 />
                 <button
-                    className="absolute inset-y-0 right-0 px-2 py-0 bg-slate-600 hover:bg-teal-700 rounded-r-xl"
+                    className="absolute inset-y-0 right-0 px-2 py-0 bg-slate-600 hover:bg-slate-400 text-white font-bold rounded-r-xl"
                     onClick={handleAddTask}
                 >
                     <img 
