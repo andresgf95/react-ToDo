@@ -25,7 +25,7 @@ const Task = ({ task, handleCompleted, handleDelete }) => {
                             className="bg-slate-600 p-1 rounded-full cursor-pointer"
                             onClick={() => handleCompleted(id)}>
                             <img
-                                className="h-5 w-5"
+                                className="h-5 w-5 transition-all duration-50 ease-in-out"
                                 src="check-icon.svg"
                                 alt="cono de tarea completada" />
                         </div>
@@ -51,7 +51,7 @@ const Task = ({ task, handleCompleted, handleDelete }) => {
                 onClick={() => handleDelete(id)}
                 src="/close-icon.svg"
                 alt="Cerrar tarea"
-                className="h-7 w-7 cursor-pointer transition-all duration-300 ease-in-out" />
+                className="h-7 w-7 cursor-pointer transition-all duration-300 ease-in-out text-ellipsis hover:scale-125" />
         </div >
     )
 }

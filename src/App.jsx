@@ -1,4 +1,3 @@
-// App.jsx
 import { TaskInput } from "./components/TaskInput/TaskInput";
 import { TaskList } from "./components/TaskList/TaskList";
 import { Title } from "./components/Title/Title";
@@ -10,7 +9,7 @@ export default function App() {
   const { activeFilter, filteredTasks, showAllTasks, showActiveTasks, showCompletedTasks } = useFilters(tasks);
 
   return (
-    <div className="bg-gray-800 min-h-screen h-full text-gray-100 flex-items-center justify-center py-20 px-5">
+    <div className="bg-gray-800 min-h-screen h-full text-gray-100 flex items-center justify-center">
       <div className="container flex flex-col max-w-xl">
         <Title />
         <TaskInput addTask={addTask} />
